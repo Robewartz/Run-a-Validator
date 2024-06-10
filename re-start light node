@@ -1,0 +1,7 @@
+cd $HOME
+// Don't ignore these commands:
+cd $store
+cd ..
+// Start light node again:
+nubit $NODE_TYPE init
+nubit $NODE_TYPE start --p2p.network $NETWORK --core.ip $VALIDATOR_IP --rpc.addr 0.0.0.0
