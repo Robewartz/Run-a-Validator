@@ -1,0 +1,6 @@
+export NUBIT_VALIDATOR_HOME="$HOME/.nubit-validator"
+echo $NUBIT_VALIDATOR_HOME
+rm -rf $NUBIT_VALIDATOR_HOME
+VALIDATOR_NAME=nubit  # Replace VALIDATOR_NAME with your desired one
+CHAIN_ID=nubit-alphatestnet-1
+nubit-validatord init $VALIDATOR_NAME --chain-id $CHAIN_ID
